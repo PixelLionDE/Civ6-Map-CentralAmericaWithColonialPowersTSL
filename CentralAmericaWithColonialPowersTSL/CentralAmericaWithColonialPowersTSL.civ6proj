@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Central America with Colonial Powers TSL</Name>
+    <Guid>6552af46-a7f9-4323-8b90-b935e0b467ff</Guid>
+    <ProjectGuid>cc728220-6f0e-4b74-9654-447d8bab1e52</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Huge semi-realistic map of Central America with adjustments for better gameplay</Teaser>
+    <Description>Huge (106x66) semi-realistic map of Central America with adjustments for better gameplay. Featuring the Aztecs, Mayans and Inca civilizations with fixed starting locations (TSL) alongside the colonial powers Spain (Rio Grande Delta), England (Cuba), France (Florida) and the Netherlands (Hispaniola). Includes city-states Caguana, Cahokia, Hunza, La Venta, Mexico City, Mitla and Nazca.</Description>
+    <Authors>PixelLion</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+  <Dependency type="Dlc" title="Expansion: Rise and Fall" id="1B28771A-C749-434B-9053-D1380C553DE9" />
+  <Dependency type="Dlc" title="DLC: Aztec Civilization Pack" id="02A8BDDE-67EA-4D38-9540-26E685E3156E" />
+  <Dependency type="Dlc" title="DLC: Maya &amp; Gran Colombia Pack" id="9DE86512-DE1A-400D-8C0A-AB46EBBF76B9" />
+  <Dependency type="Dlc" title="DLC: Vikings Content" id="2F6E858A-28EF-46B3-BEAC-B985E52E9BC1" />
+</Associations>]]></AssociationData>
+    <AssemblyName>CentralAmericaWithColonialPowersTSL</AssemblyName>
+    <RootNamespace>CentralAmericaWithColonialPowersTSL</RootNamespace>
+    <Homepage>http://https://github.com/PixelLionDE/Civ6-Map-CentralAmericaWithColonialPowersTSL</Homepage>
+    <FrontEndActionData><![CDATA[<FrontEndActions><AddWorldBuilderMap id="AddSEAMAP"><File>Maps/SCS-CentralAmericaTSL.Civ6Map</File></AddWorldBuilderMap></FrontEndActions>]]></FrontEndActionData>
+    <ModProperties>
+      <CustomProperties>
+        <Name>Central America with Colonial Powers TSL</Name>
+        <Group>StandardMaps</Group>
+      </CustomProperties>
+    </ModProperties>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Maps" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maps\CentralAmericaWithColonialPowersTSL.Civ6Map">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
